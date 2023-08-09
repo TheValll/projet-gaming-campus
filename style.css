@@ -302,3 +302,103 @@ header button:hover{
     margin-top: 30px;
     padding-bottom: 50px;
 }
+@media screen and (max-width: 1380px) {
+    ul li{
+        list-style: none;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.7rem;
+    }
+    .recent-actualites{
+        grid-template-columns: 1fr;
+        grid-template-rows: (5, 1fr);
+        grid-template-areas: 
+    "a1"
+    "bt1"
+    "a2"
+    "bt2"
+    "a3"
+    "bt3";
+    }
+    .news-header{
+        display: block;
+    }
+    .news-header-left h2{
+        text-align: center;
+        margin: 50px auto
+    }
+    .news-header button{
+        display: block;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .recent-actualites img{
+        display: block;
+        margin: 0 auto;
+    }
+    .actualite1,.actualite2,.actualite3{
+        width: 100%;
+    }
+    .infos,.oui,.pub{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 1160px){
+    nav{
+        display: none;
+        visibility: hidden;
+    }
+    .formations{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        display: block;
+    }
+    .logo img{
+        height: 10%;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1000px){
+    header h1{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width: 550px){
+    header img{
+        width: 80%;
+    }
+    header h1{
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+    }
+    header button{
+        width: 400px;
+    }
+    .gaming-business-school,.gaming-academy,.gaming-guru{
+        margin: 40px 5px;
+        font-size: 0.7rem;
+    }
+    .gaming-business-school img,.gaming-academy img,.gaming-guru img{
+        width: 150px;
+    }
+    .gaming-business-school button,.gaming-academy button,.gaming-guru button{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 425px){
+    header button{
+        width: 300px;
+        font-size: 0.8rem;
+    }
+    .news-header button{
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+}
